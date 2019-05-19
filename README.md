@@ -1,23 +1,23 @@
-# HUB
-This is the implementation for the paper titled ["When Sentiment Analysis Meets Social Network: A Holistic User Behavior Modeling in Opinionated Data"](https://www.cs.virginia.edu/~lg5bt/files/kdd2018.pdf). We provide all the source codes for the algorithm and related baselines.
+# JNET
+This is the implementation for the Joint Network Embedding and Topic Embedding (JNET). We provide all the source codes for the algorithm and related baselines.
 
 ## Reference
 Lin Gong and Hongning Wang. When Sentiment Analysis Meets Social Network: A Holistic User Behavior Modeling in Opinionated Data, KDD 2018.
 
 ## Quick Start (For Linux and Mac)
-* Download the [HUB repo](https://github.com/Linda-sunshine/HUB.git) to your local machine.
+* Download the [JNET repo](https://github.com/Linda-sunshine/JNET.git) to your local machine.
 * Download the [data](http://www.cs.virginia.edu/~lg5bt/files/data.zip) to the directory that **./src** lies in.
-* Compile the whole project with [complie file](https://github.com/Linda-sunshine/HUB/blob/master/compile).
+* Compile the whole project with [complie file](https://github.com/Linda-sunshine/JNET/blob/master/compile).
 ```
 ./compile
 ```
-* Run the algorithm with default setting with [run file](https://github.com/Linda-sunshine/HUB/blob/master/run).
+* Run the algorithm with default setting with [run file](https://github.com/Linda-sunshine/JNET/blob/master/run).
 ```
 ./run
 ```
-## Questions regarding running HUB and Baselines
+## Questions regarding running JNET and Baselines
 ### Q1: What's inside the ./data folder?
-**./data** folder has all the data needed for the experiments reported in the paper, including both Amazon data (./data/CoLinAdapt/Amazon/) and Yelp data (./data/CoLinAdapt/YelpNew/). For example, **./data/CoLinAdapt/Amazon** contains the following files which are needed for running experiments with Amazon dataset:
+**./data** folder has all the data needed for the experiments reported in the paper, including both Yelp data (./data/CoLinAdapt/YelpNew/) and StackOverflow data (./data/CoLinAdapt/StackOverflow/). For example, **./data/CoLinAdapt/Yelp** contains the following files which are needed for running experiments with Yelp dataset:
 ```
 CrossGroups_800.txt
 AmazonFriends.txt
