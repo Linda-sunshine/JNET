@@ -10,6 +10,7 @@ import topicmodels.UserEmbedding.EUB;
 import topicmodels.multithreads.UserEmbedding.EUB4ColdStart_multithreading;
 import topicmodels.multithreads.UserEmbedding.EUB_multithreading;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -122,6 +123,13 @@ public class EUBExecution {
         } else{
             ((EUB) tModel).fixedCrossValidation(param.m_kFold, param.m_saveDir);
         }
+
+        String saveDir = param.m_saveDir + String.format("%s_nuTopics_%d_dim_%d_fold_%d_%d", param.m_data,
+                param.m_number_of_topics, param.m_embeddingDim, param.m_kFold);
+        File dir = new File(saveDir);
+        if(!dir.exists())
+            dir.mkdir();
+
         tModel.printBeta(param.m_saveDir);
         if(param.m_mode.equals("ansrec")){
             ((EUB) tModel).printTopicEmbeddingAsMtx(param.m_saveDir);
