@@ -8,7 +8,7 @@ run
 /bin/
 Jar/*
 out/*
-.idea/*
+idea.xml
 *.iml
 *.txt
 .settings/*

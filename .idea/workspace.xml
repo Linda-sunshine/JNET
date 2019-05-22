@@ -1,86 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6db98f6-1879-410f-b130-d626a1bb2dd3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/metricLearning/L2RMetricLearning.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/metricLearning/L2RWithQueryClustering.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/metricLearning/LinearSVMMetricLearning.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/semisupervised/GaussianFieldsByRandomWalkWithFriends.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/Base.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoAdaptStruct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/CoLinAdapt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/CoLinAdaptWithDiffFeatureGroups.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/CoLinAdaptWithNeighborhoodLearning.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/LinAdapt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/LinAdaptColdStart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/MTCoLinAdapt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/MTLinAdapt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/MTLinAdaptWithSupUserNoAdapt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/WeightedAvgAdapt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/WeightedAvgTransAdapt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/_CoLinAdaptDiffFvGroupsStruct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/_CoLinAdaptStruct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/_LinAdaptStruct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncCoLinAdapt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncCoLinAdaptFirstOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncLinAdapt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncMTLinAdapt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/CLRWithDP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/CLinAdaptWithDP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/CLinAdaptWithKmeans.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/DoubleNormalPrior.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/IsoCLRWithDP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/IsoCLinAdaptWithDP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/IsoMTCLRWithDP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/IsoMTCLinAdaptWithDP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/MTCLRWithDP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/MTCLinAdaptWithDP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/MTCLinAdaptWithDPExp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/MTCLinAdaptWithDPKMeans.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/MTCLinAdaptWithDPLR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/NormalPrior.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/_CLinAdaptStruct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/_DPAdaptStruct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/CLRWithHDP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/CLinAdaptWithHDP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/DirichletPrior.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/IndSVMWithKmeans.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/IndSVMWithKmeansExp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/MTCLRWithHDP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/MTCLinAdaptWithHDP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/MTCLinAdaptWithHDPConfidence.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/MTCLinAdaptWithHDPDualConfidence.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/MTCLinAdaptWithHDPExp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/MTCLinAdaptWithHDPLR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/MTCLinAdaptWithHDPMultipleE.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/_HDPAdaptStruct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MMB/CLRWithMMB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MMB/CLinAdaptWithMMB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MMB/MTCLRWithMMB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MMB/MTCLinAdaptWithMMB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MMB/_MMBAdaptStruct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MTSVMColdStart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ModelAdaptation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MultiTaskLR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MultiTaskSVM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MultiTaskSVMWithClusters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ReTrain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/CoRegLR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/MTRegLR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/RegLR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/_CoRegLRAdaptStruct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/asyncCoRegLR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/asyncCoRegLRFirstOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/asyncMTRegLR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/asyncRegLR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/_AdaptStruct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mains/EUBMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mains/EUBMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/EmbeddingParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/EmbeddingParameter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/_MMBNeighbor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/_UserReviewPair.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/multithreads/LDA/AttributeAwareLDA_VarMultiThread.java" beforeDir="false" />
-    </list>
+    <list default="true" id="c6db98f6-1879-410f-b130-d626a1bb2dd3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +13,7 @@
     <session id="-717504618">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
@@ -152,7 +73,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/mains/EUBMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="359">
               <caret line="128" column="54" selection-start-line="128" selection-start-column="54" selection-end-line="128" selection-end-column="54" />
             </state>
           </provider>
@@ -270,7 +191,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558554509683" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558554697847" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -321,16 +242,15 @@
       <updated>1558277225706</updated>
       <workItem from="1558277229553" duration="1098000" />
       <workItem from="1558376274506" duration="3935000" />
-      <workItem from="1558475006294" duration="5649000" />
+      <workItem from="1558475006294" duration="5934000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10682000" />
+    <option name="totallyTimeSpent" value="10967000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="23" width="1440" height="793" extended-state="6" />
-    <editor active="true" />
+    <frame x="2" y="23" width="1440" height="793" extended-state="0" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -345,7 +265,7 @@
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.33775812" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.33775812" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
@@ -639,7 +559,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mains/EUBMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="359">
           <caret line="128" column="54" selection-start-line="128" selection-start-column="54" selection-end-line="128" selection-end-column="54" />
         </state>
       </provider>
