@@ -10,6 +10,7 @@ import topicmodels.multithreads.LDA.LDA_Variational_multithread;
 import topicmodels.multithreads.UserEmbedding.EUB4ColdStart_multithreading;
 import topicmodels.multithreads.UserEmbedding.EUB_multithreading;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -117,7 +118,12 @@ public class EUBMain {
             ((EUB) tModel).loadQuestionIds(questionIds);
         }
 
-        String saveDir = String.format("./data/output/%s_nuTopics_%d_dim_%d_fold_%d_%d", dataset, number_of_topics, embeddingDim, k);
+        String saveDir = "./data/output/";
+
+        saveDir = saveDir + String.format("%s_nuTopics_%d_dim_%d_fold_%d_%d", dataset, number_of_topics, embeddingDim, k);
+        File dir = new File(saveDir);
+        if(!dir.exists())
+            dir.mkdir();
 
         if(multiFlag && coldStartFlag)
             ((EUB4ColdStart_multithreading) tModel).fixedCrossValidation(k, saveDir);
