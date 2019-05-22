@@ -1,9 +1,6 @@
 # JNET
 This is the implementation for the Joint Network Embedding and Topic Embedding (JNET). We provide all the source codes for the algorithm and related baselines.
 
-## Reference
-Lin Gong and Hongning Wang. When Sentiment Analysis Meets Social Network: A Holistic User Behavior Modeling in Opinionated Data, KDD 2018.
-
 ## Quick Start (For Linux and Mac)
 * Download the [JNET repo](https://github.com/Linda-sunshine/JNET.git) to your local machine.
 * Download the [data](http://www.cs.virginia.edu/~lg5bt/files/data.zip) to the directory that **./src** lies in.
