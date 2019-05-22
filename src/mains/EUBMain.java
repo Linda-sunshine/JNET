@@ -30,7 +30,7 @@ public class EUBMain {
         String dataset = "YelpNew"; // "StackOverflow", "YelpNew"
         String tokenModel = "./data/Model/en-token.bin"; // Token model.
 
-        String prefix = "./data/";
+        String prefix = "./data";
         String providedCV = String.format("%s/%s/%sSelectedVocab.txt", prefix, dataset, dataset);
         String userFolder = String.format("%s/%s/Users", prefix, dataset);
 

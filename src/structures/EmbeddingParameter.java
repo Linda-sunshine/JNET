@@ -5,7 +5,7 @@ package structures;
  */
 public class EmbeddingParameter {
 
-    public String m_prefix = "./data/";//"./data/CoLinAdapt"
+    public String m_prefix = "./data";//"./data/CoLinAdapt"
     public String m_data = "YelpNew";
 
     public int m_emIter = 50;
@@ -90,10 +90,9 @@ public class EmbeddingParameter {
                 m_testInferIter = Integer.valueOf(argv[i]);
             else if(argv[i - 1].equals("-coldStart"))
                 m_coldStartFlag = Boolean.valueOf(argv[i]);
-
+            else
+                exit_with_help();
         }
-        // must specify the save directory for data
-        exit_with_help();
     }
 
     private void exit_with_help() {
@@ -106,11 +105,11 @@ public class EmbeddingParameter {
                 +"-dim: the dimension of user embeddings and topic embeddings (default 10)\n"
                 +"-multi: run the algorithm in multi-threading or not (default true)\n"
                 +"-saveDir: directory for saving the learned user embeddings and topic embeddings (default ./data/output/)\n"
-                +"-kFold: speicfy which fold to train (default 0),\noption: 0, 1, 2, 3, 4\n"
-                +"-mode: specify the experimental setting (default cv4doc)\noption: cv4doc, cv4edge\n"
+                +"-kFold: speicfy which fold to train (default 0), option: 0, 1, 2, 3, 4\n"
+                +"-mode: specify the experimental setting (default cv4doc)option: cv4doc, cv4edge\n"
+                +"-coldStart: whether we perform experiments in cold-start setting or not (default: false)\n"
                 +"--------------------------------------------------------------------------------\n"
         );
-
         System.exit(1);
     }
 }
