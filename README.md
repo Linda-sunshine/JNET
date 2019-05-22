@@ -3,7 +3,7 @@ This is the implementation for the Joint Network Embedding and Topic Embedding (
 
 ## Quick Start (For Linux and Mac)
 * Download the [JNET repo](https://github.com/Linda-sunshine/JNET.git) to your local machine.
-* Download the [data](http://www.cs.virginia.edu/~lg5bt/files/data.zip) to the directory that **./src** lies in.
+* Download the [data](http://www.cs.virginia.edu/~lg5bt/files/jnet_data.zip) to the directory that **./src** lies in.
 * Compile the whole project with [complie file](https://github.com/Linda-sunshine/JNET/blob/master/compile).
 ```
 ./compile
