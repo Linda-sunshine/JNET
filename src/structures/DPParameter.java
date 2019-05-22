@@ -154,27 +154,27 @@ public class DPParameter {
 	
 	private void exit_with_help()
 	{
-//		System.out.print(
-//				 "Usage: java execution [options] training_folder\n"
-//				+"options:\n"
-//				+"-data: specific the dataset used for training (default Amazon)\noption: Amazon, Yelp\n"
-//				+"-adaptRatio: the ratio of data for training: batch-0.5; online-1 (default 0.5, online must be 1)\n"
-//				+"-eta1: coefficient for the scaling in each user group's regularization (default 1)\n"
-//				+"-eta2: coefficient for the shifting in each user group's regularization (default 0.5)\n"
-//				+"-eta3: coefficient for the scaling in super user's regularization (default 0.1)\n"
-//				+"-eta4: coefficient for the shifting in super user's regularization (default 0.3)\n"
-//				+"-model: specific training model,\noption: Base-base, GlobalSVM-gsvm, IndividualSVM-indsvm, RegLR-reglr, LinAdapt-linadapt, MultiTaskSVM-mtsvm, MTLinAdapt_Batch-mtlinbatch, MTLinAdapt_Online-mtlinonline\n"
-//				+"-fv: feature groups for user groups (default 800),\noption: 400, 800, 1600, 5000\n"
-//				+"-fvSup: feature groups for super user(default 5000)\n"
-//				+"-M : the size of the auxiliary variables in the posterior inference of the group indicator (default 6)\n"
-//				+"-alpha : concentraction parameter for DP (default 1.0)\n"
-//				+"-nuI : number of iterations for sampling (default 30)\n"
-//				+"-sdA : variance for the normal distribution for the prior of shifting parameters (default 0.2)\n"
-//				+"-sdB : variance for the normal distribution for the prior of sacling parameters (default 0.2)\n"
-//				+"-burn : number of iterations in burn-in period (default 5)\n"
-//				+"-thin : thinning of sampling chain (default 5)\n"
-//				+"--------------------------------------------------------------------------------\n"
-//		);
+		System.out.print("Usage: java execution [options] training_folder\n"
+                + "options:\n"
+                + "-data: specify the dataset used for training (default YelpNew)\noption: Amazon, YelpNew\n"
+                + "-eta1: coefficient for the scaling in each user group's regularization (default 0.05)\n"
+                + "-eta2: coefficient for the shifting in each user group's regularization (default 0.05)\n"
+                + "-eta3: coefficient for the scaling in super user's regularization (default 0.05)\n"
+                + "-eta4: coefficient for the shifting in super user's regularization (default 0.05)\n"
+                + "-model: specific training model,\noption: Base-base, MT-SVM-mtsvm, GBSSL-gbssl, HUB-hub"
+                + "MTLinAdapt+kMeans-mtclinkmeans,  cLinAdapt-mtclindp, cLinAdapt+HDP-mtclinhdp (default hub)\n"
+                + "-M: the size of the auxiliary variables in the posterior inference of the group indicator (default 6)\n"
+                + "-alpha: concentraction parameter for the first-layer DP, i.e., collective identities (default 0.01)\n"
+                + "-beta: concentraction parameter for the prior Dirichlet Distribution of language model (default 0.05)\n"
+                + "-eta: concentraction parameter for the second-layer DP, i.e., user mixture (default 0.05)\n"
+                + "-nuI: number of iterations for sampling (default 30)\n"
+                + "-sdA: variance for the normal distribution for the prior of shifting parameters (default 0.0425)\n"
+                + "-sdB: variance for the normal distribution for the prior of scaling parameters (default 0.0425)\n"
+                + "-burn: number of iterations in burn-in period (default 5)\n"
+                + "-thin: thinning of sampling chain (default 5)\n"
+                + "-rho: the sparsity parameter for block model (default 0.05)\n"
+                + "--------------------------------------------------------------------------------\n"
+		);
 		System.exit(1);
 	}
 }

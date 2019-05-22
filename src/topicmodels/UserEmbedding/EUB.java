@@ -1,6 +1,5 @@
 package topicmodels.UserEmbedding;
 
-import Application.LinkPrediction4EUB.AnswererRecommendation;
 import Jama.Matrix;
 import structures.*;
 import topicmodels.LDA.LDA_Variational;
