@@ -12,9 +12,11 @@ This is the implementation for the Joint Network Embedding and Topic Embedding (
 ```
 ./run
 ```
-## Questions regarding running JNET and Baselines
+## Questions regarding running JNET
 ### Q1: What's inside the ./data folder?
-**./data** folder has all the data needed for the experiments reported in the paper, including both Yelp data (./data/CoLinAdapt/YelpNew/) and StackOverflow data (./data/CoLinAdapt/StackOverflow/). For example, **./data/CoLinAdapt/Yelp** contains the following files which are needed for running experiments with Yelp dataset:
+**./data** folder has all the data needed for running experiments, including both Yelp data (./data/YelpNew/) and StackOverflow data (./data/StackOverflow/). The data for running 
+
+For example, **./data/Yelp** contains the following files which are needed for running experiments with Yelp dataset:
 ```
 CrossGroups_800.txt
 AmazonFriends.txt
