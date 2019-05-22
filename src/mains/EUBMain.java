@@ -30,19 +30,16 @@ public class EUBMain {
         String dataset = "YelpNew"; // "StackOverflow", "YelpNew"
         String tokenModel = "./data/Model/en-token.bin"; // Token model.
 
-        String prefix = "./data/JNET/";
+        String prefix = "./data/";
         String providedCV = String.format("%s/%s/%sSelectedVocab.txt", prefix, dataset, dataset);
         String userFolder = String.format("%s/%s/Users", prefix, dataset);
 
         int kFold = 5;
-        int time = 2;
         int k = 0;
 
         String friendFile = String.format("%s/%s/%sFriends.txt", prefix, dataset, dataset);
         String cvIndexFile = String.format("%s/%s/%sCVIndex.txt", prefix, dataset, dataset);
-//        String cvIndexFile4Interaction = String.format("%s/%s/%sCVIndex4Interaction.txt", prefix, dataset, dataset);
         String cvIndexFile4Interaction = String.format("%s/%s/%sCVIndex4Interaction_fold_%d_train.txt", prefix, dataset, dataset, k);
-        String cvIndexFile4NonInteraction = String.format("%s/%s/%sCVIndex4NonInteraction_time_%d.txt", prefix, dataset, dataset, time);
 
         MultiThreadedNetworkAnalyzer analyzer = null;
 
@@ -120,9 +117,7 @@ public class EUBMain {
             ((EUB) tModel).loadQuestionIds(questionIds);
         }
 
-        long current = System.currentTimeMillis();
-        String saveDir = String.format("./data/embeddingExp/eub/%s_emIter_%d_nuTopics_%d_varIter_%d_trainIter_%d_testIter_%d_dim_%d_ada_%b/" +
-                "fold_%d_%d", dataset, emMaxIter, number_of_topics, varMaxIter, trainIter, testIter, embeddingDim, adaFlag, k, current);
+        String saveDir = String.format("./data/output/%s_nuTopics_%d_dim_%d_fold_%d_%d", dataset, number_of_topics, embeddingDim, k);
 
         if(multiFlag && coldStartFlag)
             ((EUB4ColdStart_multithreading) tModel).fixedCrossValidation(k, saveDir);

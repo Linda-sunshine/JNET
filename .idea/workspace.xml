@@ -3,55 +3,83 @@
   <component name="ChangeListManager">
     <list default="true" id="c6db98f6-1879-410f-b130-d626a1bb2dd3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/DPParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/DPParameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/metricLearning/L2RMetricLearning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/metricLearning/L2RWithQueryClustering.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/metricLearning/LinearSVMMetricLearning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/semisupervised/GaussianFieldsByRandomWalkWithFriends.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/Base.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoAdaptStruct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/CoLinAdapt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/CoLinAdaptWithDiffFeatureGroups.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/CoLinAdaptWithNeighborhoodLearning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/LinAdapt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/LinAdaptColdStart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/MTCoLinAdapt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/MTLinAdapt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/MTLinAdaptWithSupUserNoAdapt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/WeightedAvgAdapt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/WeightedAvgTransAdapt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/_CoLinAdaptDiffFvGroupsStruct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/_CoLinAdaptStruct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/_LinAdaptStruct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncCoLinAdapt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncCoLinAdaptFirstOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncLinAdapt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncMTLinAdapt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/CLRWithDP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/CLinAdaptWithDP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/CLinAdaptWithKmeans.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/DoubleNormalPrior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/IsoCLRWithDP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/IsoCLinAdaptWithDP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/IsoMTCLRWithDP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/IsoMTCLinAdaptWithDP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/MTCLRWithDP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/MTCLinAdaptWithDP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/MTCLinAdaptWithDPExp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/MTCLinAdaptWithDPKMeans.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/MTCLinAdaptWithDPLR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/NormalPrior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/_CLinAdaptStruct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/_DPAdaptStruct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/CLRWithHDP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/CLinAdaptWithHDP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/DirichletPrior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/IndSVMWithKmeans.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/IndSVMWithKmeansExp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/MTCLRWithHDP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/MTCLinAdaptWithHDP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/MTCLinAdaptWithHDPConfidence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/MTCLinAdaptWithHDPDualConfidence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/MTCLinAdaptWithHDPExp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/MTCLinAdaptWithHDPLR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/MTCLinAdaptWithHDPMultipleE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/HDP/_HDPAdaptStruct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MMB/CLRWithMMB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MMB/CLinAdaptWithMMB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MMB/MTCLRWithMMB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MMB/MTCLinAdaptWithMMB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MMB/_MMBAdaptStruct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MTSVMColdStart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ModelAdaptation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MultiTaskLR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MultiTaskSVM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MultiTaskSVMWithClusters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ReTrain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/CoRegLR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/MTRegLR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/RegLR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/_CoRegLRAdaptStruct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/asyncCoRegLR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/asyncCoRegLRFirstOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/asyncMTRegLR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/asyncRegLR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/_AdaptStruct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mains/EUBMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mains/EUBMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/structures/EmbeddingParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/EmbeddingParameter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/CTM/CTM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/DCM/DCMLDA.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/DCM/DCMLDA_test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/RoleEmbedding/RoleEmbeddingBaseline.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/RoleEmbedding/RoleEmbeddingDiagB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/RoleEmbedding/RoleEmbeddingFixB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/RoleEmbedding/RoleEmbeddingFixU.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/RoleEmbedding/RoleEmbeddingMaxRoleDiff.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/RoleEmbedding/RoleEmbeddingSkipGram.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/RoleEmbedding/UserEmbeddingBaseline.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/RoleEmbedding/UserEmbeddingSkipGram.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/UserEmbedding/EUB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/topicmodels/UserEmbedding/EUB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/ACCTM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/ACCTM_C.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/ACCTM_CHard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/ACCTM_CHard_test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/ACCTM_CZ.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/ACCTM_CZLR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/ACCTM_CZ_test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/ACCTM_C_test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/ACCTM_test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/DCMCorrLDA.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/DCMCorrLDA_multi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/DCMCorrLDA_multi_E.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/DCMCorrLDA_multi_E_test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/DCMCorrLDA_test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/DCMLDA4AC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/DCMLDA4AC_test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/LDAGibbs4AC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/LDAGibbs4AC_test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/corrLDA_Gibbs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/correspondenceModels/corrLDA_Gibbs_test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/embeddingModel/TUIR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/languageModelBaseLine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/markovmodel/HMMs/FastRestrictedHMM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/markovmodel/HMMs/FastRestrictedHMM_sentiment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/markovmodel/HMMs/LRFastRestrictedHMM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/markovmodel/HMMs/LRFastRestrictedHMM_sentiment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/markovmodel/HTMM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/markovmodel/HTSM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/markovmodel/LRHTMM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/markovmodel/LRHTSM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/multithreads/DCMLDA/DCMLDA_multithread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/multithreads/HTSM/LRHTSM_multithread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/multithreads/embeddingModel/TUIR_multithread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/outputFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topicmodels/posteriorRegularization/PairwiseAttributeConstraints.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structures/_MMBNeighbor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structures/_UserReviewPair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topicmodels/multithreads/LDA/AttributeAwareLDA_VarMultiThread.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,108 +101,73 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="47" />
+          <entry key="java" value="54" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="47" />
+          <entry key="JAVA" value="54" />
           <entry key="Markdown" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="131" />
+          <entry key="java" value="747" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="131" />
+          <entry key="JAVA" value="747" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.7787611">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/mains/EUBExecution.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="74">
-                  <caret line="103" column="56" selection-start-line="103" selection-start-column="56" selection-end-line="103" selection-end-column="56" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/topicmodels/UserEmbedding/EUB.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="40" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="40" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/structures/EmbeddingParameter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1575">
-                  <caret line="105" column="19" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/structures/DPParameter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="224">
-                  <caret line="175" column="102" selection-start-line="175" selection-start-column="102" selection-end-line="175" selection-end-column="102" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/structures/RoleParameter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/mains/EUBMain.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="868">
-                  <caret line="113" column="48" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/structures/EmbeddingParameter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="88">
-                  <caret line="105" column="19" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mains/EUBExecution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="133" column="31" selection-start-line="133" selection-start-column="25" selection-end-line="133" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/topicmodels/UserEmbedding/EUB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="1473" column="16" selection-start-line="1473" selection-start-column="16" selection-end-line="1473" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/mains/EUBMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="128" column="54" selection-start-line="128" selection-start-column="54" selection-end-line="128" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/topicmodels/LDA/LDA_Variational.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="59">
+              <caret line="405" column="16" selection-start-line="405" selection-start-column="16" selection-end-line="405" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -192,9 +185,11 @@
         <option value="$PROJECT_DIR$/src/Analyzer/MultiThreadedUserAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/mains/EUBExecution.java" />
         <option value="$PROJECT_DIR$/src/topicmodels/UserEmbedding/EUB.java" />
-        <option value="$PROJECT_DIR$/src/mains/EUBMain.java" />
-        <option value="$PROJECT_DIR$/src/structures/EmbeddingParameter.java" />
         <option value="$PROJECT_DIR$/src/structures/DPParameter.java" />
+        <option value="$PROJECT_DIR$/src/structures/EmbeddingParameter.java" />
+        <option value="$PROJECT_DIR$/src/Classifier/metricLearning/L2RMetricLearning.java" />
+        <option value="$PROJECT_DIR$/src/topicmodels/TopicModel.java" />
+        <option value="$PROJECT_DIR$/src/mains/EUBMain.java" />
       </list>
     </option>
   </component>
@@ -204,7 +199,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="793" />
@@ -231,14 +227,27 @@
               <item name="JNET" type="b2602c69:ProjectViewProjectNode" />
               <item name="JNET" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="topicmodels" type="462c0819:PsiDirectoryNode" />
+              <item name="Classifier" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JNET" type="b2602c69:ProjectViewProjectNode" />
               <item name="JNET" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="topicmodels" type="462c0819:PsiDirectoryNode" />
-              <item name="UserEmbedding" type="462c0819:PsiDirectoryNode" />
+              <item name="Classifier" type="462c0819:PsiDirectoryNode" />
+              <item name="semisupervised" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JNET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JNET" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Classifier" type="462c0819:PsiDirectoryNode" />
+              <item name="supervised" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JNET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JNET" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="structures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JNET" type="b2602c69:ProjectViewProjectNode" />
@@ -261,7 +270,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558544386928" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558554509683" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -280,6 +289,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="EUBMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mains.EUBMain" />
+      <module name="JNET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mains.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EUBMain" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -292,17 +321,47 @@
       <updated>1558277225706</updated>
       <workItem from="1558277229553" duration="1098000" />
       <workItem from="1558376274506" duration="3935000" />
-      <workItem from="1558475006294" duration="2461000" />
+      <workItem from="1558475006294" duration="5649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7494000" />
+    <option name="totallyTimeSpent" value="10682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="23" width="1440" height="793" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.15164521" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" weight="0.32890856" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.33775812" />
+      <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout>
+    <layout-to-restore>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
@@ -330,7 +389,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -465,34 +524,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mains/EUBExecution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="103" column="56" selection-start-line="103" selection-start-column="56" selection-end-line="103" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/structures/CFParameter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/structures/EmbeddingParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="105" column="19" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/structures/DPParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="175" column="102" selection-start-line="175" selection-start-column="102" selection-end-line="175" selection-end-column="102" />
         </state>
       </provider>
     </entry>
@@ -503,17 +538,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/topicmodels/LDA/LDA_Variational.java">
+    <entry file="file://$PROJECT_DIR$/src/mains/EUBExecution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1019">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/topicmodels/UserEmbedding/EUB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="40" />
+        <state relative-caret-position="500">
+          <caret line="133" column="31" selection-start-line="133" selection-start-column="25" selection-end-line="133" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -527,10 +555,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/metricLearning/L2RMetricLearning.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1935">
+          <caret line="129" column="22" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/MTCLinAdaptWithDPLR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topicmodels/multithreads/LDA/AttributeAwareLDA_VarMultiThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topicmodels/TopicModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/structures/EmbeddingParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="95" column="25" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/structures/_UserReviewPair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/structures/DPParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="175" column="102" selection-start-line="175" selection-start-column="102" selection-end-line="175" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/semisupervised/GaussianFieldsByRandomWalkWithFriends.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topicmodels/LDA/LDA_Variational.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="405" column="16" selection-start-line="405" selection-start-column="16" selection-end-line="405" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topicmodels/UserEmbedding/EUB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="1473" column="16" selection-start-line="1473" selection-start-column="16" selection-end-line="1473" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/mains/EUBMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="868">
-          <caret line="113" column="48" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
+        <state relative-caret-position="221">
+          <caret line="128" column="54" selection-start-line="128" selection-start-column="54" selection-end-line="128" selection-end-column="54" />
         </state>
       </provider>
     </entry>

@@ -5,7 +5,7 @@ package structures;
  */
 public class EmbeddingParameter {
 
-    public String m_prefix = "/zf8/lg5bt/DataSigir";//"./data/CoLinAdapt"
+    public String m_prefix = "./data/";//"./data/CoLinAdapt"
     public String m_data = "YelpNew";
 
     public int m_emIter = 50;
@@ -31,7 +31,7 @@ public class EmbeddingParameter {
     public boolean m_ada = false;
     public boolean m_coldStartFlag = false;
 
-    public String m_saveDir = "";
+    public String m_saveDir = "./data/output/";
     public String m_mode = "cv4doc";
 
     public EmbeddingParameter(String argv[]) {
@@ -93,31 +93,21 @@ public class EmbeddingParameter {
 
         }
         // must specify the save directory for data
-        if(m_saveDir.length() == 0){
-            System.out.println("[Error]Please specify the save directory!!");
-            exit_with_help();
-        }
+        exit_with_help();
     }
 
     private void exit_with_help() {
 
-        System.out.print("Usage: java execution [options] training_folder\n" +"options:\n"
-                +"-data: specific the dataset used for training (default YelpNew)\noption: Yelp, StackOverflow\n"
-                +"-: the ratio of data for training: batch-0.5; online-1 (default 0.5, online must be 1)\n"
-                +"-eta1: coefficient for the scaling in each user group's regularization (default 1)\n"
-                +"-eta2: coefficient for the shifting in each user group's regularization (default 0.5)\n"
-                +"-eta3: coefficient for the scaling in super user's regularization (default 0.1)\n"
-                +"-eta4: coefficient for the shifting in super user's regularization (default 0.3)\n"
-                +"-model: specific training model,\noption: Base-base, GlobalSVM-gsvm, IndividualSVM-indsvm, RegLR-reglr, LinAdapt-linadapt, MultiTaskSVM-mtsvm, MTLinAdapt_Batch-mtlinbatch, MTLinAdapt_Online-mtlinonline\n"
-                +"-fv: feature groups for user groups (default 800),\noption: 400, 800, 1600, 5000\n"
-                +"-fvSup: feature groups for super user(default 5000)\n"
-                +"-M : the size of the auxiliary variables in the posterior inference of the group indicator (default 6)\n"
-                +"-alpha : concentraction parameter for DP (default 1.0)\n"
-                +"-nuI : number of iterations for sampling (default 30)\n"
-                +"-sdA : variance for the normal distribution for the prior of shifting parameters (default 0.2)\n"
-                +"-sdB : variance for the normal distribution for the prior of sacling parameters (default 0.2)\n"
-                +"-burn : number of iterations in burn-in period (default 5)\n"
-                +"-thin : thinning of sampling chain (default 5)\n"
+        System.out.print("Usage: java execution [options] training_folder\noptions:\n"
+                +"-prefix: the directory of the data (default ./data/)\n"
+                +"-data: specific dataset used for training (default YelpNew)\noption: YelpNew, StackOverflow\n"
+                +"-emIter: the number of iterations in variationla EM algorithm (default 50)\n"
+                +"-nuTopics: the number of topics (default 30)\n"
+                +"-dim: the dimension of user embeddings and topic embeddings (default 10)\n"
+                +"-multi: run the algorithm in multi-threading or not (default true)\n"
+                +"-saveDir: directory for saving the learned user embeddings and topic embeddings (default ./data/output/)\n"
+                +"-kFold: speicfy which fold to train (default 0),\noption: 0, 1, 2, 3, 4\n"
+                +"-mode: specify the experimental setting (default cv4doc)\noption: cv4doc, cv4edge\n"
                 +"--------------------------------------------------------------------------------\n"
         );
 
