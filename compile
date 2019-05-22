@@ -1,0 +1,7 @@
+#!/bin/sh
+PROJECT_PATH=.
+JAR_PATH=$PROJECT_PATH/libs
+BIN_PATH=$PROJECT_PATH/bin
+CLASS_PATH=$PROJECT_PATH/src
+
+javac -g -nowarn -cp $CLASS_PATH -d $BIN_PATH -extdirs $JAR_PATH $CLASS_PATH/mains/EUBExecution.java
