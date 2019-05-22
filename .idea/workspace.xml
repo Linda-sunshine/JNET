@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da4abb59-4b1d-4f64-ab4a-294e8bd8af11" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topicmodels/UserEmbedding/EUB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/topicmodels/UserEmbedding/EUB.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,12 +25,14 @@
         <counts>
           <entry key="iml" value="1" />
           <entry key="java" value="5" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="5" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -50,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mains/EUBMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1921">
-              <caret line="124" column="47" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="47" />
+            <state relative-caret-position="667">
+              <caret line="130" column="47" selection-start-line="130" selection-start-column="27" selection-end-line="130" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -59,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/topicmodels/UserEmbedding/EUB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="790">
-              <caret line="1229" column="13" selection-start-line="1229" selection-start-column="13" selection-end-line="1229" selection-end-column="13" />
+            <state relative-caret-position="228">
+              <caret line="339" column="5" selection-start-line="339" selection-start-column="5" selection-end-line="339" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -68,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mains/EUBExecution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="39" column="36" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="36" />
+            <state relative-caret-position="510">
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -97,6 +99,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>init</find>
+      <find>delta_stat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -217,15 +220,16 @@
       <option name="presentableId" value="Default" />
       <updated>1558555225206</updated>
       <workItem from="1558555229912" duration="1653000" />
-      <workItem from="1558558293675" duration="370000" />
+      <workItem from="1558558293675" duration="585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2023000" />
+    <option name="totallyTimeSpent" value="2238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1664" y="-11" width="1537" height="1212" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22364002" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -264,17 +268,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/mains/EUBMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="124" column="47" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mains/EUBExecution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="36" />
+        <state relative-caret-position="510">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -295,10 +292,24 @@
     <entry file="file://$PROJECT_DIR$/JNET.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="116" column="23" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mains/EUBMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="130" column="47" selection-start-line="130" selection-start-column="27" selection-end-line="130" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/topicmodels/UserEmbedding/EUB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="1229" column="13" selection-start-line="1229" selection-start-column="13" selection-end-line="1229" selection-end-column="13" />
+        <state relative-caret-position="228">
+          <caret line="339" column="5" selection-start-line="339" selection-start-column="5" selection-end-line="339" selection-end-column="5" />
         </state>
       </provider>
     </entry>

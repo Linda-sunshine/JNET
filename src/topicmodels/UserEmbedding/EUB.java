@@ -337,19 +337,6 @@ public class EUB extends LDA_Variational {
 
             lastAllLikelihood = currentAllLikelihood;
         } while (iter < number_of_iteration && converge > m_converge);
-        printGlobalStat4Delta();
-    }
-
-    public void printGlobalStat4Delta(){
-        try{
-            PrintWriter writer = new PrintWriter("./data/delta_stat.txt");
-            for(int i=0; i<number_of_iteration; i++){
-                writer.format("%d\t%d\t%.4f\t%.4f\n", globalCounts[i][0], globalCounts[i][1], globalMeans[i][0], globalMeans[i][1]);
-            }
-            writer.close();
-        } catch(IOException e){
-            e.printStackTrace();
-        }
     }
 
     // put the user interaction and non-interaction information in the four hashmaps
