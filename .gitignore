@@ -15,4 +15,4 @@ idea.xml
 *.log
 *.class
 *.out
-.idea/*
+.idea/workspace.xml
