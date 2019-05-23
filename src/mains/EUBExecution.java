@@ -124,7 +124,7 @@ public class EUBExecution {
             ((EUB) tModel).fixedCrossValidation(param.m_kFold, param.m_saveDir);
         }
 
-        String saveDir = param.m_saveDir + String.format("%s_nuTopics_%d_dim_%d_fold_%d_%d", param.m_data,
+        String saveDir = param.m_saveDir + String.format("%s_nuTopics_%d_dim_%d_fold_%d", param.m_data,
                 param.m_number_of_topics, param.m_embeddingDim, param.m_kFold);
         File dir = new File(saveDir);
         if(!dir.exists())

@@ -92,7 +92,7 @@ public class EUB extends LDA_Variational {
     }
 
     public String toString() {
-        return String.format("[EUB]Mode: %s, Dim: %d, Topic number: %d, EmIter: %d, VarIter: %d, TrainInferIter: %d, TestInferIter: %d, ParamIter: %d.\n",
+        return String.format("[JNET]Mode: %s, Dim: %d, Topic number: %d, EmIter: %d, VarIter: %d, TrainInferIter: %d, TestInferIter: %d, ParamIter: %d.",
                 m_mType.toString(), m_embeddingDim, number_of_topics, number_of_iteration, m_varMaxIter, m_trainInferMaxIter, m_testInferMaxIter, m_paramMaxIter);
     }
 
@@ -309,9 +309,6 @@ public class EUB extends LDA_Variational {
         do {
             System.out.format(String.format("\n----------Start EM %d iteraction----------\n", iter));
 
-            oneMeans.clear();
-            zeroMeans.clear();
-            Arrays.fill(counts, 0);
 
             if (m_multithread)
                 currentAllLikelihood = multithread_E_step();
@@ -323,11 +320,6 @@ public class EUB extends LDA_Variational {
                 converge = Math.abs((lastAllLikelihood - currentAllLikelihood) / lastAllLikelihood);
             else
                 converge = 1.0;
-
-            // for debugging purpose
-            for(_User4EUB u: m_users)
-                calcMean(u);
-            calcDeltaStat(iter);
 
             calculate_M_step(++iter);
 
@@ -359,7 +351,7 @@ public class EUB extends LDA_Variational {
             }
         }
 
-        System.out.println("Finish network construction!");
+        System.out.print("Finish network construction!");
     }
 
     @Override
@@ -814,62 +806,6 @@ public class EUB extends LDA_Variational {
         } while(iter++ < iterMax && Math.abs(diff) > cvg);
         if(m_displayLv != 0)
             System.out.println("------------------------");
-    }
-
-    ArrayList<Double> oneMeans = new ArrayList<>();
-    ArrayList<Double> zeroMeans = new ArrayList<>();
-    double[][] globalMeans = new double[number_of_iteration][2];
-    int[][] globalCounts = new int[number_of_iteration][2];
-
-    public void calcDeltaStat(int iter){
-        double[] means = new double[2];
-        for(double v: oneMeans)
-            means[0] += v;
-        for(double v: zeroMeans)
-            means[1] += v;
-        means[0] /= oneMeans.size();
-        means[1] /= zeroMeans.size();
-
-        globalMeans[iter][0] = means[0];
-        globalMeans[iter][1] = means[1];
-        globalCounts[iter][0] = counts[0];
-        globalCounts[iter][1] = counts[1];
-        System.out.format("%d users delta_ij for one > delta_ij for zero, %d users delta_ij for one < delta_ij for zero\n", counts[0], counts[1]);
-        System.out.format("%d users have interactions, and mean delta_ij for one over these users is %.4f\n", oneMeans.size(), means[0]);
-        System.out.format("%d users have non-interactions, and mean delta_ij for zero over these users is %.4f\n", oneMeans.size(), means[1]);
-    }
-
-    // the first means the delta_ij for one  > delta_ij for zero.
-    // the second is the delta_ij for one  < delta_ij for one.
-    int[] counts = new int[2];
-    public void calcMean(_User4EUB ui){
-        int i = m_usersIndex.get(ui.getUserID());
-
-        double oneEdgeMean = 0, zeroEdgeMean = 0, oneCount = 0, zeroCount = 0;
-        HashSet<Integer> interactions = m_networkMap.containsKey(i) ? m_networkMap.get(i) : null;
-
-        for(int j=0; j<m_users.size(); j++) {
-            if (i == j)
-                continue;
-
-            int eij = (interactions != null && interactions.contains(j)) ? 1 : 0;
-            if(eij == 1){
-                oneCount++;
-                oneEdgeMean += ui.m_mu_delta[j];
-            } else{
-                zeroCount++;
-                zeroEdgeMean += ui.m_mu_delta[j];
-            }
-        }
-
-        oneEdgeMean = oneCount == 0 ? -1 : oneEdgeMean/oneCount;
-        zeroEdgeMean /= zeroCount;
-        if(oneCount > 0) oneMeans.add(oneEdgeMean);
-        if(zeroCount > 0) zeroMeans.add(zeroEdgeMean);
-        if(oneCount > 0 && oneEdgeMean > zeroEdgeMean){
-            counts[0]++;
-        } else if(oneCount > 0 && oneEdgeMean < zeroEdgeMean)
-            counts[1]++;
     }
 
     protected double[] calcFGValueDeltaMu(_User4EUB ui, double[] mu_delta, int eij, int j) {

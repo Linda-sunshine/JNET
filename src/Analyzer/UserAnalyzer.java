@@ -242,10 +242,10 @@ public class UserAnalyzer extends DocAnalyzer {
 
 	//Return all the users.
 	public ArrayList<_User> getUsers(){
-		System.out.format("[Info]Training size: %d(%.2f), adaptation size: %d(%.2f), and testing size: %d(%.2f)\n",
-				m_trainSize, m_trainSize>0?m_pCount[0]/m_trainSize:0.0,
-				m_adaptSize, m_adaptSize>0?m_pCount[1]/m_adaptSize:0.0,
-				m_testSize, m_testSize>0?m_pCount[2]/m_testSize:0.0);
+//		System.out.format("[Info]Training size: %d(%.2f), adaptation size: %d(%.2f), and testing size: %d(%.2f)\n",
+//				m_trainSize, m_trainSize>0?m_pCount[0]/m_trainSize:0.0,
+//				m_adaptSize, m_adaptSize>0?m_pCount[1]/m_adaptSize:0.0,
+//				m_testSize, m_testSize>0?m_pCount[2]/m_testSize:0.0);
 		return m_users;
 	}
 
