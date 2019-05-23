@@ -66,9 +66,7 @@ TopicEmbedding.txt
 With the learned user embeddings, we can perform other tasks such as link prediction.
 
 ### Q4: What does the output mean?
-In running the algorithm, a lot of information is printed out for reference, as follows. Line 1-5 is basic information of the input data, especially the **[stat]** the number of documents in each fold since we are performing 5-fold cross validation. Line 6 describes the basic information of the model. From Line 8, the algorithm starts performing EM algorithm. In E-step, the decomposed likelihood regarding to document, topic and user are printed out for tracking. In M-step, model parameters are estimated as shown in Line 24-25. E-step and M-step are repeated until convergence.
-
-The first line is the information of the parameters used in the current run, which is the same as introduced in the first part. We also print out the confusion matrix, together with Micro F1 and Macro F1 for both classes. Micro F1 performance is calculated by aggregating all users’ reviews while Macro F1 is the average performance over all the users. Class 0 is negative class and Class 1 is positive class. Due to the randomness of initialization of model weights, the final sentiment performance may vary in different runs. More detail about the experimental setting can be found in our paper. 
+In running the algorithm, a lot of information is printed out for reference, as follows. Line 1-5 is basic information of the input data, especially the **[stat]** the number of documents in each fold since we are performing 5-fold cross validation. Line 6 describes the basic information of the model. From Line 8, the algorithm starts performing EM algorithm. In E-step, the decomposed likelihood regarding to document, topic and user are printed out for tracking. In M-step, model parameters are estimated as shown in Line 24-25. E-step and M-step are repeated until convergence. Starting from Line 28, the algorithm tests the perplexity on the held-out set of documents, and the performance is reported in Line 32. It also prints out the save directory and the time used to run.
 ```
 1 Load 5000 2-gram new features from /zf8/lg5bt/DataSigir/StackOverflow/StackOverflowSelectedVocab.txt...
 2 10808 users/244360 docs are loaded from /zf8/lg5bt/DataSigir/StackOverflow/Users...
@@ -96,7 +94,15 @@ The first line is the information of the parameters used in the current run, whi
 24 [M-step]Estimate alpha....
 25 [M-step]Estimate beta....
 26 [ModelParam]alpha:16.057, gamma:0.100,tau:1.000,xi:2.000, rho:1.00000
-27
+27 ....
+28 In one fold, (train: test)=(150179 : 37558)
+29 [Info]Current mode is cv for docs, start evaluation....
+30 [Inference]Likelihood: -9068817.34
+31 [Inference]Likelihood: -9068817.46
+32 [Stat]TestInferIter=100, perplexity=3364.7239, totalWords=1116698, allLogLikelihood=-9068817.4570, avgLogLikelihood=-241.4617
+33 [Info]Finish training, start saving data...
+34 TopWord FilePath:./data/output/TopKWords.txt
+35 [Time]This training+testing process took 0.85 hours.
 ```
 
 
