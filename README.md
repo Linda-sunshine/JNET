@@ -1,5 +1,9 @@
 # JNET
-This is the implementation for the Joint Network Embedding and Topic Embedding (JNET). We provide all the source codes for the algorithm and related baselines.
+This is the implementation for the paper titled "JNET: Learning User Representations via Joint Network Embedding and Topic Embedding". We provide all the source codes for the algorithm and related baselines.
+
+
+## Reference
+Lin Gong, Lu Lin, Weihao Song and Hongning Wang. JNET: Learning User Representations via Joint Network Embedding and Topic Embedding, WSDM 2020.
 
 ## Quick Start (For Linux and Mac)
 * Download the [JNET repo](https://github.com/Linda-sunshine/JNET.git) to your local machine.
